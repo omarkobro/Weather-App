@@ -31,7 +31,7 @@ let weatherApiInfo;
 
 //API Function
 async function getWeather(){
-    weatherApiInfo = await fetch("http://api.weatherapi.com/v1/forecast.json?key=ecd910d82c834f0e8ed131531231408&q=Cairo&days=3&aqi=no&alerts=no")
+    weatherApiInfo = await fetch("https://api.weatherapi.com/v1/forecast.json?key=ecd910d82c834f0e8ed131531231408&q=Cairo&days=3&aqi=no&alerts=no")
     let weatherData = await weatherApiInfo.json()
     return weatherData
 }
@@ -88,7 +88,7 @@ function Search(){
     searchButton.addEventListener("click", async function(){
         console.log("hello");
         let searchValue = searchInput.value
-        weatherApiInfo = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=ecd910d82c834f0e8ed131531231408&q=${searchValue}&days=3&aqi=no&alerts=no`)
+        weatherApiInfo = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=ecd910d82c834f0e8ed131531231408&q=${searchValue}&days=3&aqi=no&alerts=no`)
         let weatherData = await weatherApiInfo.json()
         DisplayTodayData(weatherData)
         DisplayTomorrowData(weatherData)
