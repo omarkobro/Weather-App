@@ -97,8 +97,6 @@ function Search(){
     })
 }
 
-
-
 //Starting All Functions 
 async function start(){
     let weather = await getWeather()

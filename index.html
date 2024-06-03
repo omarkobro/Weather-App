@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Assignment 12</title>
+    <title>Weather App</title>
 </head>
 <body>
     <div class="all-content">
@@ -47,94 +47,90 @@
                 </nav>
         </div>
     </div>
-    <div class="background-section">
-        <div class="container d-flex justify-content-center align-items-center ">
+    <div class="background-section pb-5">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
             <form class="find-location w-100">
                 <input class="mt-5" type="text" placeholder="Find your location..." id="locationInput">
                 <input class="mt-5" type="button" value="Find" id="locationButton">
             </form>
-        </div>
-        <div class="container position-relative">
-            <div class="row main-box position-absolute w-75 mx-auto">
-                <div class="col-sm-4 coll1 px-0">
-                    <div class="forcast-header1 d-flex justify-content-between mb-3 py-3 text-white w-100 px-2">
-                        <span id="currentDay"></span>
-                        <span id="currentDate"></span>
-                    </div>
-                    <div class="forcast-content py-4">
-                        <span id="cityName" class="ms-3 text-white"></span>
-                        <div class="">
-                            <h2 id="currentTemp" class="ms-3 me-5 text-white"></h2>
-                            <span class="ms-3">
-                                <img id="currentImg" class="" src="" alt="">
-                            </span>
-                        </div>
-                        <p id="currentDayInfo" class="ms-3 text-info"></p>
-                    </div>
-                    <div class="forcatst-info d-flex">
-                        <span id="humidity" class=" text-white mx-1">
-
-                        </span>
-                        <span id="windSpeed" class=" text-white mx-1">
-
-                        </span>
-                        <span id="windDirection" class="me-1 text-white mx-1">
-
-                        </span>
-                    </div>
+                <!-- =========================================== -->
+        <div class="row main-box  w-75 mx-auto ">
+            <div class="col-md-4 col-sm-12 coll1 px-0">
+                <div class="forcast-header1 d-flex justify-content-between mb-3 py-3 text-white w-100 px-2">
+                    <span id="currentDay"></span>
+                    <span id="currentDate"></span>
                 </div>
-                <div class="col-sm-4 coll2  px-0">
-                    <div class="forcast-header2 text-center  mb-3 py-3 text-white w-100 px-2">
-                        <span id="nextDay"></span>
+                <div class="forcast-content py-4">
+                    <span id="cityName" class="ms-3 text-white"></span>
+                    <div class="">
+                        <h2 id="currentTemp" class="ms-3 me-5 text-white"></h2>
+                        <span class="ms-3">
+                            <img id="currentImg" class="" src="" alt="">
+                        </span>
                     </div>
-                    <div class="next-day text-center">
-                        <div class="img-container">
-                            <img id="nextDayImg" src="" alt="">
-                        </div>
-                        <h6 id="nextDayMaxTemp" class="text-white fs-3 fw-bolder"></h6>
-                        <span id="nextDayMinTemp" class="text-white"></span>
-                        <p id="nextDayInfo" class="text-info m-3 "></p>
-                    </div>
+                    <p id="currentDayInfo" class="ms-3 text-info"></p>
                 </div>
-                <div class="col-sm-4 coll3  px-0">
-                    <div class="forcast-header3 text-center mb-3 py-3 text-white w-100 px-2">
-                        <span id="AfterTomorrow">monday</span>
+                <div class="forcatst-info d-flex">
+                    <span id="humidity" class=" text-white mx-1">
+
+                    </span>
+                    <span id="windSpeed" class=" text-white mx-1">
+
+                    </span>
+                    <span id="windDirection" class="me-1 text-white mx-1">
+
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12  coll2  px-0">
+                <div class="forcast-header2 text-center  mb-3 py-3 text-white w-100 px-2">
+                    <span id="nextDay"></span>
+                </div>
+                <div class="next-day text-center">
+                    <div class="img-container">
+                        <img id="nextDayImg" src="" alt="">
                     </div>
-                    <div  class="next-day text-center">
-                        <div class="img-container">
-                            <img  id="AfterTomorrowImg" src="" alt="">
-                        </div>
-                        <h6 id="AfterTomorrowMaxTemp" class="text-white fs-3 fw-bolder"></h6>
-                        <span id="AfterTomorrowMinTemp" class="text-white"></span>
-                        <p id="AfterTomorrowInfo" class="text-info m-3 "></p>
+                    <h6 id="nextDayMaxTemp" class="text-white fs-3 fw-bolder"></h6>
+                    <span id="nextDayMinTemp" class="text-white"></span>
+                    <p id="nextDayInfo" class="text-info m-3 "></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12  coll3  px-0">
+                <div class="forcast-header3 text-center mb-3 py-3 text-white w-100 px-2">
+                    <span id="AfterTomorrow">monday</span>
+                </div>
+                <div  class="next-day text-center">
+                    <div class="img-container">
+                        <img  id="AfterTomorrowImg" src="" alt="">
                     </div>
+                    <h6 id="AfterTomorrowMaxTemp" class="text-white fs-3 fw-bolder"></h6>
+                    <span id="AfterTomorrowMinTemp" class="text-white"></span>
+                    <p id="AfterTomorrowInfo" class="text-info m-3 "></p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- =========================================== -->
-    <div class="dark-background">
+        </div>
     </div>
     <!-- =========================================== -->
     <footer class="site-footer position-relative">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center text-center">
                 <div class="col-md-8">
                     <form action="#" class="subscribe-form">
                         <input type="text" placeholder="Enter your email to subscribe..." class="rounded-pill">
                         <input type="submit" value="Subscribe">
                     </form>
                 </div>
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-12 col-lg-3 col-md-offset-1 pt-lg-0 pt-md-4 pt-sm-4 socialContainer">
                     <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                         <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
-            <p class="text-white ms-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            <p class="text-white ms-5 pt-5 text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
         </div>
     </footer>
     <div>

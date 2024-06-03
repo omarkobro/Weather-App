@@ -46,7 +46,6 @@
 .background-section{
     background-image: url(../Img/banner.png);
     background-size: cover;
-    height: 350px;
 }
 .find-location {
     position: relative;
@@ -109,8 +108,10 @@ button, input, select, textarea {
     -o-border-radius: 10px 0px 0px 10px  ;
     background-color: #323544;
 }
+
 .coll2{
     background-color: #262936;
+
 }
 .coll3{
     border-radius: 0px 10px 10px 0px  ;
@@ -120,6 +121,7 @@ button, input, select, textarea {
     -o-border-radius: 0px 10px 10px 0px  ;
     background-color: #323544;
 }
+
 .forcast-header1{
     background-color: #2d303d;
     border-radius: 10px 0px 0px 0px  ;
@@ -140,21 +142,31 @@ button, input, select, textarea {
     -ms-border-radius: 0px 10px 0px 0px  ;
     -o-border-radius: 0px 10px 0px 0px  ;
 }
+
+@media only screen and (max-width: 768px) {
+    .coll1,.forcast-header1{
+        border-radius: 10px 10px 0px 0px ;
+        -webkit-border-radius: 10px 10px 0px 0px ;
+        -moz-border-radius: 10px 10px 0px 0px ;
+        -ms-border-radius: 10px 10px 0px 0px ;
+        -o-border-radius: 10px 10px 0px 0px ;
+}
+    .coll3,.forcast-header3{
+        border-radius: 0px 0px 10px 10px ;
+        -webkit-border-radius: 0px 0px 10px 10px ;
+        -moz-border-radius: 0px 0px 10px 10px ;
+        -ms-border-radius: 0px 0px 10px 10px ;
+        -o-border-radius: 0px 0px 10px 10px ;
+}
+}
+
 .forcatst-info img{
     width: 20px;
     height: 20px;
     margin: 0.5rem;
 }
 
-.main-box{
-    position: absolute;
-    /* top: 380px; */
-    right: 180px;
-}
-.dark-background{
-    height: 40vh;
-    background-color: #1e202b;
-}
+
 
 footer{
     background-color: #262936;
@@ -163,7 +175,6 @@ footer{
 }
 .site-footer .subscribe-form {
     position: relative;
-    margin-bottom: 30px;
 }
 .site-footer .subscribe-form input[type="text"] {
     padding: 20px 100px 20px 20px;
@@ -201,15 +212,21 @@ footer{
     border-radius: 30px;
     color: white;
 }
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
 .site-footer .social-links a {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    display: inline-block;
     border-radius: 50%;
     background: #1e202b;
     color: #009ad8;
-    text-align: center;
-    line-height: 2;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-size: 20px;
@@ -218,4 +235,10 @@ footer{
 .site-footer .social-links a:hover {
     background: #009ad8;
     color: white;
+}
+
+@media  screen and (max-width: 576px){
+    .socialContainer{
+        padding-top: 1.5rem;
+    }
 }
