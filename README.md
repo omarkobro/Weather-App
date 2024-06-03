@@ -8,7 +8,7 @@
 - Search Functionality: Allows users to input a location and retrieve the weather forecast for that specific location.
 - Responsive Design:Ensures the app is accessible and looks good on various devices, including desktops, tablets, and mobile phones.
 
-# Technologies Used:
+# Technologies Used
 - HTML5
 - CSS3
 - Bootstrap 5
